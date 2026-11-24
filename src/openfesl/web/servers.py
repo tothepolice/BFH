@@ -4,7 +4,7 @@ from dataclasses import dataclass, field, replace
 from math import ceil
 from typing import Any, Self
 
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import HTMLResponse
 from starlette.datastructures import QueryParams
 
@@ -146,6 +146,34 @@ def server_routes(pages: Pages, games: Games, census: Census, approval: Approval
         approval: Knows the official mark of the servers that stopped hosting.
     """
     router = APIRouter()
+
+    @router.get("/api/{game_id}/servers")
+    async def servers_json(game_id: str) -> dict[str, Any]:
+        """The game's hosted servers and counters as JSON, for launchers."""
+        game = games.by_id(game_id)
+        if game is None:
+            raise HTTPException(status_code=404)
+        activity = census.activity(game)
+        label = lambda value: value.value if value else None  # noqa: E731
+        return {
+            "online": activity.online,
+            "inMatches": activity.in_matches,
+            "servers": [
+                {
+                    "slug": s.slug,
+                    "name": s.name,
+                    "players": s.players,
+                    "maxPlayers": s.max_players,
+                    "map": label(s.map),
+                    "mode": label(s.mode),
+                    "region": label(s.region),
+                    "hardcore": s.hardcore,
+                    "official": s.official,
+                }
+                for s in census.servers(game)
+            ],
+        }
+
     for game in games.with_page("servers"):
         router.add_api_route(
             f"/{game.id}/servers", _list(pages, census, game), response_class=HTMLResponse
