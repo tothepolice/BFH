@@ -1,0 +1,2255 @@
+# The Russian texts of OpenFESL, by id. Texts without an entry here fall back to English.
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenFESL\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "verification.mail.subject"
+msgstr "Подтверждение адреса электронной почты аккаунта OpenFESL"
+
+#, python-brace-format
+msgid "verification.mail.body"
+msgstr "На этот адрес электронной почты зарегистрирован аккаунт OpenFESL. Войти на сайте и в играх можно будет после подтверждения адреса. Эта ссылка открывает страницу, где кнопка подтверждает адрес:\n\n{link}\n\nСсылка действует до {expires}. После этого вход на сайте предложит новую ссылку, а следующий вход из игры отправит её сам.\n"
+
+msgid "account.mail.proof.subject"
+msgstr "Привязка сервиса входа к аккаунту OpenFESL"
+
+#, python-brace-format
+msgid "account.mail.proof.body"
+msgstr "Вход через {service} запросил привязку к аккаунту OpenFESL {account}. Эта ссылка открывает страницу, где кнопка привязывает {service} и выполняет вход:\n\n{link}\n\nСсылка действует до {expires} и срабатывает один раз. Без неё ничего не изменится.\n"
+
+msgid "account.mail.address.subject"
+msgstr "Подтверждение адреса электронной почты аккаунта OpenFESL"
+
+#, python-brace-format
+msgid "account.mail.address.body"
+msgstr "На этот адрес электронной почты зарегистрирован аккаунт OpenFESL, и в него уже можно войти. Эта ссылка открывает страницу, где кнопка подтверждает адрес:\n\n{link}\n\nСсылка действует до {expires}.\n"
+
+msgid "account.mail.in_use.subject"
+msgstr "Регистрация с адресом аккаунта OpenFESL"
+
+#, python-brace-format
+msgid "account.mail.in_use.body"
+msgstr "Регистрация с этим адресом электронной почты была отправлена {sent}, но у этого адреса уже есть аккаунт OpenFESL. Ничего не изменилось, сервис не привязан. Вход в аккаунт здесь:\n\n{link}\n\nНа странице аккаунта можно привязать сервисы. Забытый игровой пароль сбрасывается здесь:\n\n{reset}\n"
+
+msgid "account.mail.reset.subject"
+msgstr "Новый игровой пароль для аккаунта OpenFESL"
+
+#, python-brace-format
+msgid "account.mail.reset.body"
+msgstr "Для аккаунта OpenFESL с этим адресом электронной почты запрошен новый игровой пароль. Эта ссылка позволяет его задать:\n\n{link}\n\nОна действует до {expires} и срабатывает один раз. Без неё игровой пароль не изменится.\n"
+
+msgid "account.mail.deletion.subject"
+msgstr "Аккаунт OpenFESL деактивирован"
+
+#, python-brace-format
+msgid "account.mail.deletion.body"
+msgstr "Аккаунт OpenFESL {name} с этим адресом электронной почты был деактивирован {at} по запросу на удаление, отправленному на сайте. Он больше не входит на сайт и в игры. Администратор завершит удаление аккаунта со всем содержимым; до тех пор отозвать запрос может только администратор.\n"
+
+msgid "web.language.name"
+msgstr "Русский"
+
+msgid "web.shell.skip"
+msgstr "Перейти к содержимому"
+
+msgid "web.shell.games"
+msgstr "Игры"
+
+msgid "web.shell.language"
+msgstr "Язык"
+
+msgid "web.site.on"
+msgstr "на OpenFESL"
+
+msgid "web.site.page.play"
+msgstr "Как играть"
+
+msgid "web.site.page.leaderboard"
+msgstr "Рейтинги"
+
+msgid "web.site.page.host"
+msgstr "Свой сервер"
+
+msgid "web.site.strip.services"
+msgstr "Войти через сервис"
+
+msgid "web.site.wallets"
+msgstr "Кошельки"
+
+msgid "web.slots.title"
+msgstr "Слоты героев"
+
+msgid "web.slots.used"
+msgstr "Занято %(used)s из %(slots)s"
+
+msgid "web.slots.used.label"
+msgstr "Занято слотов героев: %(used)s из %(slots)s"
+
+msgid "web.slots.taking"
+msgstr "Новый герой займёт слот %(slot)s, жёлтый, и сохранит его: героев нельзя удалить."
+
+msgid "web.slots.free.one"
+msgstr "У каждого аккаунта есть %(count)s бесплатный слот героя."
+
+msgid "web.slots.free.few"
+msgstr "У каждого аккаунта есть %(count)s бесплатных слота героя."
+
+msgid "web.slots.free.many"
+msgstr "У каждого аккаунта есть %(count)s бесплатных слотов героя."
+
+msgid "web.slots.free.other"
+msgstr "У каждого аккаунта есть %(count)s бесплатных слотов героя."
+
+msgid "web.slots.buy"
+msgstr "Купить слот героя"
+
+msgid "web.slots.further"
+msgstr "Каждый следующий слот стоит %(cost)s."
+
+msgid "web.slots.kept"
+msgstr "Слот остаётся за аккаунтом. Героев нельзя удалить, поэтому каждый герой сохраняет свой слот."
+
+msgid "web.slots.submit"
+msgstr "Купить за %(price)s %(currency)s"
+
+msgid "web.slots.why.funds"
+msgstr "На аккаунте %(funds)s %(currency)s; слот стоит %(price)s."
+
+msgid "web.slots.all_used.one"
+msgstr "Слот занят: %(count)s"
+
+msgid "web.slots.all_used.few"
+msgstr "Все %(count)s слота заняты"
+
+msgid "web.slots.all_used.many"
+msgstr "Все %(count)s слотов заняты"
+
+msgid "web.slots.all_used.other"
+msgstr "Все %(count)s слотов заняты"
+
+msgid "web.slots.another"
+msgstr "Ещё один слот героя"
+
+msgid "web.slots.another.text.one"
+msgstr "Слот занят: %(count)s. Ещё один слот стоит %(cost)s и остаётся за аккаунтом."
+
+msgid "web.slots.another.text.few"
+msgstr "Все %(count)s слота заняты. Ещё один слот стоит %(cost)s и остаётся за аккаунтом."
+
+msgid "web.slots.another.text.many"
+msgstr "Все %(count)s слотов заняты. Ещё один слот стоит %(cost)s и остаётся за аккаунтом."
+
+msgid "web.slots.another.text.other"
+msgstr "Все %(count)s слотов заняты. Ещё один слот стоит %(cost)s и остаётся за аккаунтом."
+
+msgid "web.slots.done"
+msgstr "Слот героя %(slot)s добавлен. Потрачено %(price)s %(currency)s."
+
+msgid "web.slots.done.again"
+msgstr "Этот слот героя уже был куплен; повторная отправка не добавила слот. Больше ничего не потрачено."
+
+msgid "web.slots.refused.funds"
+msgstr "Слот героя не добавлен: на аккаунте %(funds)s %(currency)s; слот стоит %(price)s. Ничего не потрачено."
+
+msgid "web.slots.refused.price"
+msgstr "Слот героя не добавлен: цена слота изменилась и теперь составляет %(price)s %(currency)s. Ничего не потрачено."
+
+msgid "web.slots.refused.form"
+msgstr "Слот героя не добавлен: форма устарела. Ничего не потрачено."
+
+msgid "web.creator.title"
+msgstr "Создать героя"
+
+msgid "web.creator.lead"
+msgstr "Случайный герой уже готов: измените его фракцию, класс и внешность, затем дайте ему имя."
+
+msgid "web.creator.lead.first"
+msgstr "Первый герой становится героем по умолчанию: именно с ним «Играть сейчас» запускает игру."
+
+msgid "web.creator.lead.kept"
+msgstr "Фракция, класс и выбранная здесь внешность остаются за героем; новое имя позже будет стоить %(cost)s."
+
+msgid "web.creator.lead.full"
+msgstr "Для нового героя нужен свободный слот."
+
+msgid "web.creator.waiting"
+msgstr "Конструктор откроется после входа."
+
+msgid "web.creator.signed_out"
+msgstr "Войдите, чтобы создать героя"
+
+msgid "web.creator.signed_out.text"
+msgstr "Герои принадлежат аккаунту. После входа конструктор откроется здесь."
+
+msgid "web.creator.full.one"
+msgstr "Слот героя занят: %(count)s"
+
+msgid "web.creator.full.few"
+msgstr "Все %(count)s слота героев заняты"
+
+msgid "web.creator.full.many"
+msgstr "Все %(count)s слотов героев заняты"
+
+msgid "web.creator.full.other"
+msgstr "Все %(count)s слотов героев заняты"
+
+msgid "web.creator.full.text"
+msgstr "Героев нельзя удалить, поэтому для нового героя нужен ещё один слот. Слот стоит %(cost)s и остаётся за аккаунтом; после его добавления конструктор откроется здесь."
+
+msgid "web.creator.refused.taken"
+msgstr "%(name)s не создан: имя заняли мгновением раньше. Слот героя не использован, остальные выбранные параметры сохранены ниже."
+
+msgid "web.creator.refused.form"
+msgstr "Герой не создан: форма устарела. Слот героя не использован, выбранные параметры сохранены ниже."
+
+msgid "web.creator.who"
+msgstr "%(hero_class)s: %(faction)s"
+
+msgid "web.creator.bubble"
+msgstr "Готов к службе!"
+
+msgid "web.creator.bubble.who"
+msgstr "%(who)s."
+
+msgid "web.creator.bubble.created"
+msgstr "%(name)s, %(who)s."
+
+msgid "web.creator.bubble.right"
+msgstr "Фракция и класс меняются справа."
+
+msgid "web.creator.bubble.below"
+msgstr "Фракция и класс меняются ниже."
+
+msgid "web.creator.figure"
+msgstr "Цвет кожи %(skin)s, цвет волос %(hair_colour)s, %(hair)s, %(beard)s."
+
+msgid "web.creator.figure.hair"
+msgstr "причёска %(style)s"
+
+msgid "web.creator.figure.no_hair"
+msgstr "без волос"
+
+msgid "web.creator.figure.beard"
+msgstr "растительность на лице %(style)s"
+
+msgid "web.creator.figure.no_beard"
+msgstr "без растительности на лице"
+
+msgid "web.creator.figure.caption"
+msgstr "В игре герой показан с её собственными моделями."
+
+msgid "web.creator.model"
+msgstr "Модель героя из игры: %(who)s, цвет кожи %(skin)s, цвет волос %(hair_colour)s, %(hair)s, %(beard)s."
+
+msgid "web.creator.model.caption"
+msgstr "Модель героя из игры, импортированная администраторами этого сервиса из их копии игры."
+
+msgid "web.creator.faction"
+msgstr "Фракция"
+
+msgid "web.creator.class"
+msgstr "Класс"
+
+msgid "web.creator.look"
+msgstr "Причёска и растительность на лице"
+
+msgid "web.creator.hair_style"
+msgstr "Причёска"
+
+msgid "web.creator.facial_hair"
+msgstr "Растительность на лице"
+
+msgid "web.creator.hair_style.of"
+msgstr "Причёски: %(faction)s"
+
+msgid "web.creator.facial_hair.of"
+msgstr "Растительность на лице: %(faction)s"
+
+msgid "web.creator.style"
+msgstr "Стиль %(number)s"
+
+msgid "web.creator.none"
+msgstr "Нет"
+
+msgid "web.creator.look.note"
+msgstr "Стили фракции: %(faction)s. При смене фракции каждый список сохраняет своё положение."
+
+msgid "web.creator.skin_tone"
+msgstr "Цвет кожи"
+
+msgid "web.creator.hair_colour"
+msgstr "Цвет волос"
+
+msgid "web.creator.skin_tone.choice"
+msgstr "Цвет кожи %(n)s из %(count)s"
+
+msgid "web.creator.hair_colour.choice"
+msgstr "Цвет волос %(n)s из %(count)s"
+
+msgid "web.creator.of"
+msgstr "%(n)s из %(count)s"
+
+msgid "web.creator.surprise"
+msgstr "Удиви меня"
+
+msgid "web.creator.done"
+msgstr "Готово"
+
+msgid "web.creator.naming"
+msgstr "Имя героя"
+
+msgid "web.creator.name"
+msgstr "Имя героя"
+
+msgid "web.creator.name.hint"
+msgstr "От 2 до 16 букв, цифр, _ или -. Регистр не учитывается, поэтому Mossgrove и mossgrove — одно имя."
+
+msgid "web.creator.name.checking"
+msgstr "Проверяем %(name)s …"
+
+msgid "web.creator.name.format"
+msgstr "Используйте от 2 до 16 букв, цифр, _ или -."
+
+msgid "web.creator.name.taken"
+msgstr "%(name)s занято. Регистр не учитывается."
+
+msgid "web.creator.name.refused"
+msgstr "%(name)s заняли мгновением раньше. Слот героя не использован."
+
+msgid "web.creator.name.free"
+msgstr "%(name)s свободно."
+
+msgid "web.creator.slot"
+msgstr "Слот героя"
+
+msgid "web.creator.slot.of"
+msgstr "Слот %(slot)s из %(slots)s"
+
+msgid "web.creator.default"
+msgstr "Герой по умолчанию"
+
+msgid "web.creator.default.stays"
+msgstr "%(hero)s остаётся героем по умолчанию"
+
+msgid "web.creator.default.becomes"
+msgstr "Станет героем по умолчанию"
+
+msgid "web.creator.kit"
+msgstr "Стартовый набор"
+
+msgid "web.creator.kit.uses.one"
+msgstr "%(item)s (%(count)s использование)"
+
+msgid "web.creator.kit.uses.few"
+msgstr "%(item)s (%(count)s использования)"
+
+msgid "web.creator.kit.uses.many"
+msgstr "%(item)s (%(count)s использований)"
+
+msgid "web.creator.kit.uses.other"
+msgstr "%(item)s (%(count)s использований)"
+
+msgid "web.creator.kit.items.one"
+msgstr "%(count)s предмет для панели снаряжения"
+
+msgid "web.creator.kit.items.few"
+msgstr "%(count)s предмета для панели снаряжения"
+
+msgid "web.creator.kit.items.many"
+msgstr "%(count)s предметов для панели снаряжения"
+
+msgid "web.creator.kit.items.other"
+msgstr "%(count)s предметов для панели снаряжения"
+
+msgid "web.creator.kit.emotes.one"
+msgstr "%(count)s эмоция"
+
+msgid "web.creator.kit.emotes.few"
+msgstr "%(count)s эмоции"
+
+msgid "web.creator.kit.emotes.many"
+msgstr "%(count)s эмоций"
+
+msgid "web.creator.kit.emotes.other"
+msgstr "%(count)s эмоций"
+
+msgid "web.creator.ready"
+msgstr "Готово: %(name)s займёт слот %(slot)s."
+
+msgid "web.creator.needs.name"
+msgstr "Осталось: имя."
+
+msgid "web.creator.needs.free"
+msgstr "Осталось: свободное имя."
+
+msgid "web.creator.create"
+msgstr "Создать героя"
+
+msgid "web.creator.back"
+msgstr "Назад"
+
+msgid "web.created.title"
+msgstr "Герой создан"
+
+msgid "web.created.slot"
+msgstr "%(hero)s занял слот %(slot)s."
+
+msgid "web.created.what"
+msgstr "%(hero)s создан"
+
+msgid "web.created.default"
+msgstr "%(hero)s — герой по умолчанию, слот %(slot)s из %(slots)s."
+
+msgid "web.created.from_game"
+msgstr "%(game)s закрылась, отправив эту страницу. «Играть сейчас» снова запустит её с героем %(hero)s."
+
+msgid "web.created.further"
+msgstr "Слот %(slot)s из %(slots)s. %(game)s покажет нового героя при следующем входе."
+
+msgid "web.created.stays"
+msgstr "%(hero)s остаётся героем по умолчанию, поэтому «Играть сейчас» запускает игру с героем %(hero)s."
+
+msgid "web.created.kit"
+msgstr "Стартовый набор выдан: %(kit)s."
+
+msgid "web.created.another"
+msgstr "Создать ещё одного героя"
+
+msgid "web.created.make_default"
+msgstr "Сделать %(hero)s героем по умолчанию"
+
+msgid "web.site.heroes"
+msgstr "Мои герои"
+
+msgid "web.heroes.title"
+msgstr "Мои герои"
+
+msgid "web.heroes.lead"
+msgstr "Героев создают на этом сайте, а играют ими в %(game)s. «Играть сейчас» запускает игру с героем по умолчанию, %(hero)s. Героев нельзя удалить."
+
+msgid "web.heroes.lead.none"
+msgstr "Героев пока нет. Героев создают на этом сайте, а играют ими в %(game)s; игра открывает этот сайт, когда в неё входит аккаунт без героев."
+
+msgid "web.heroes.list"
+msgstr "Герои"
+
+msgid "web.heroes.slot"
+msgstr "Слот %(slot)s"
+
+msgid "web.heroes.free"
+msgstr "Свободный слот героя"
+
+msgid "web.heroes.free.text"
+msgstr "Выберите фракцию, класс, внешность и имя."
+
+msgid "web.heroes.none.text.one"
+msgstr "Герою нужны фракция, класс, внешность и имя. Свободен %(count)s слот. Героев нельзя удалить."
+
+msgid "web.heroes.none.text.few"
+msgstr "Герою нужны фракция, класс, внешность и имя. Свободно %(count)s слота. Героев нельзя удалить."
+
+msgid "web.heroes.none.text.many"
+msgstr "Герою нужны фракция, класс, внешность и имя. Свободно %(count)s слотов. Героев нельзя удалить."
+
+msgid "web.heroes.none.text.other"
+msgstr "Герою нужны фракция, класс, внешность и имя. Свободно %(count)s слотов. Героев нельзя удалить."
+
+msgid "web.heroes.mugshot.game"
+msgstr "Портрет героя %(name)s из игры"
+
+msgid "web.heroes.level.label"
+msgstr "Уровень"
+
+msgid "web.heroes.xp.to"
+msgstr "Опыт до уровня %(level)s"
+
+msgid "web.heroes.xp.label"
+msgstr "%(xp)s из %(needed)s опыта до уровня %(level)s"
+
+msgid "web.heroes.points.of"
+msgstr "не потрачено %(unspent)s из %(earned)s"
+
+msgid "web.heroes.points.scope"
+msgstr "только у этого героя"
+
+msgid "web.heroes.items"
+msgstr "Предметы"
+
+msgid "web.heroes.items.count.one"
+msgstr "%(count)s предмет"
+
+msgid "web.heroes.items.count.few"
+msgstr "%(count)s предмета"
+
+msgid "web.heroes.items.count.many"
+msgstr "%(count)s предметов"
+
+msgid "web.heroes.items.count.other"
+msgstr "%(count)s предметов"
+
+msgid "web.heroes.items.low.one"
+msgstr "%(count)s на исходе"
+
+msgid "web.heroes.items.low.few"
+msgstr "%(count)s на исходе"
+
+msgid "web.heroes.items.low.many"
+msgstr "%(count)s на исходе"
+
+msgid "web.heroes.items.low.other"
+msgstr "%(count)s на исходе"
+
+msgid "web.heroes.items.none_low"
+msgstr "ничего не заканчивается"
+
+msgid "web.heroes.enlisted"
+msgstr "На службе с"
+
+msgid "web.heroes.make_default"
+msgstr "Сделать основным"
+
+msgid "web.heroes.toast.default"
+msgstr "%(hero)s теперь герой по умолчанию. «Играть сейчас» запускает игру с героем %(hero)s."
+
+msgid "web.heroes.back"
+msgstr "Назад к моим героям"
+
+msgid "web.rename.action"
+msgstr "Переименовать"
+
+msgid "web.rename.price.short"
+msgstr "%(price)s %(currency)s"
+
+msgid "web.rename.title"
+msgstr "Переименовать героя %(hero)s"
+
+msgid "web.rename.name"
+msgstr "Новое имя"
+
+msgid "web.rename.hint"
+msgstr "От 2 до 16 букв, цифр, _ или -. Регистр не учитывается."
+
+msgid "web.rename.same"
+msgstr "Это уже имя героя."
+
+msgid "web.rename.price"
+msgstr "Цена"
+
+msgid "web.rename.funds_now"
+msgstr "%(currency)s сейчас"
+
+msgid "web.rename.funds_after"
+msgstr "%(currency)s после"
+
+msgid "web.rename.short"
+msgstr "Не хватает %(amount)s"
+
+msgid "web.rename.submit"
+msgstr "Переименовать за %(price)s %(currency)s"
+
+msgid "web.rename.cancel"
+msgstr "Отмена"
+
+msgid "web.rename.needs.free"
+msgstr "Выберите свободное имя."
+
+msgid "web.rename.why.funds"
+msgstr "На аккаунте %(funds)s %(currency)s; переименование стоит %(price)s."
+
+msgid "web.rename.done"
+msgstr "%(old)s переименован в %(new)s. Потрачено %(price)s %(currency)s; %(game)s покажет новое имя при следующем входе."
+
+msgid "web.rename.refused.funds"
+msgstr "%(hero)s не переименован: на аккаунте %(funds)s %(currency)s; переименование стоит %(price)s. Ничего не потрачено."
+
+msgid "web.rename.refused.price"
+msgstr "%(hero)s не переименован: цена переименования изменилась и теперь составляет %(price)s %(currency)s. Ничего не потрачено."
+
+msgid "web.rename.refused.form"
+msgstr "%(hero)s не переименован: форма устарела. Ничего не потрачено."
+
+msgid "web.heroes.wallet.shared"
+msgstr "общий для аккаунта и всех героев"
+
+msgid "web.heroes.wallet.own"
+msgstr "у каждого героя свой"
+
+msgid "web.heroes.wallet.none"
+msgstr "пока нет"
+
+msgid "web.heroes.wallet.note"
+msgstr "Валюты не продаются; страница «Средства» показывает, откуда они берутся."
+
+msgid "web.account.page.heroes"
+msgstr "Страница героев"
+
+msgid "web.heroes.stamp"
+msgstr "Основной"
+
+msgid "web.heroes.default.sr"
+msgstr "(герой по умолчанию)"
+
+msgid "web.heroes.kind"
+msgstr "%(hero_class)s · уровень %(level)s"
+
+msgid "web.heroes.level"
+msgstr "Уровень %(level)s"
+
+msgid "web.arrival.title"
+msgstr "%(game)s отправила эту страницу"
+
+msgid "web.arrival.text"
+msgstr "Игра открывает эту страницу, когда у аккаунта, с которым она входит, нет героя, и затем закрывается."
+
+msgid "web.arrival.next"
+msgstr "Создайте героя ниже; «Играть сейчас» затем запустит %(game)s с ним."
+
+msgid "web.arrival.signed_in"
+msgstr "Вы вошли как %(account)s. Если игра использовала другой аккаунт:"
+
+msgid "web.arrival.switch"
+msgstr "выйдите и войдите с ним"
+
+msgid "web.arrival.sign_in"
+msgstr "Герои принадлежат этому аккаунту: войдите с ним, и конструктор откроется здесь."
+
+msgid "web.arrival.strip"
+msgstr "или используйте вход выше с адресом электронной почты и игровым паролем, которые использует лаунчер"
+
+msgid "web.arrival.has_hero"
+msgstr "У аккаунта теперь есть герой"
+
+msgid "web.arrival.has_hero.text"
+msgstr "%(game)s отправила эту страницу, потому что при входе игры у аккаунта не было героя. С тех пор создан герой %(hero)s, поэтому «Играть сейчас» может запустить игру с ним."
+
+#, python-format
+msgid "web.error.code"
+msgstr "Ошибка %(code)d"
+
+msgid "web.error.404.title"
+msgstr "Страница не найдена"
+
+msgid "web.error.404.text"
+msgstr "Ни одна страница этого сервиса не соответствует этому адресу."
+
+#, python-format
+msgid "web.error.404.servers"
+msgstr "Серверы %(game)s"
+
+msgid "web.error.500.title"
+msgstr "Не удалось показать страницу"
+
+msgid "web.error.500.text"
+msgstr "В сервисе произошла ошибка. Повторите попытку через мгновение."
+
+msgid "web.error.500.again"
+msgstr "Повторить"
+
+msgid "web.shell.online.one"
+msgstr "%(count)s онлайн"
+
+msgid "web.shell.online.few"
+msgstr "%(count)s онлайн"
+
+msgid "web.shell.online.many"
+msgstr "%(count)s онлайн"
+
+msgid "web.shell.online.other"
+msgstr "%(count)s онлайн"
+
+msgid "web.live.updated.sentence"
+msgstr "Обновлено %(seconds)s с назад"
+
+msgid "web.live.updated.inline"
+msgstr "обновлено %(seconds)s с назад"
+
+msgid "web.live.values.sentence"
+msgstr "Значения на %(time)s UTC."
+
+msgid "web.live.values.inline"
+msgstr "значения на %(time)s UTC"
+
+msgid "web.live.reload"
+msgstr "Обновите страницу"
+
+msgid "web.live.reload.after"
+msgstr ", чтобы увидеть новые значения."
+
+msgid "web.live.stale"
+msgstr "Не удалось обновить статистику. Показаны значения на %(time)s UTC."
+
+msgid "web.server.free"
+msgstr "%(count)s свободно"
+
+msgid "web.menu.subtitle"
+msgstr "Мастер-сервер для игр на FESL и Theater"
+
+msgid "web.menu.lead"
+msgstr "OpenFESL — мастер-сервер с открытым кодом, который ведёт сообщество, для игр на сервисах EA FESL и Theater."
+
+msgid "web.menu.games"
+msgstr "Игры"
+
+msgid "web.menu.games.order"
+msgstr "По числу игроков онлайн"
+
+msgid "web.menu.enter"
+msgstr "Войти"
+
+msgid "web.menu.hook"
+msgstr "Один шаг для каждой игры"
+
+msgid "web.menu.hook.text"
+msgstr "Каждая игра подключается к OpenFESL через OpenFESLHook: его файл %(file)s кладётся в папку игры рядом с исполняемым файлом. Остальные шаги описаны на странице «Как играть» каждой игры."
+
+msgid "web.menu.hook.releases"
+msgstr "Релизы OpenFESLHook"
+
+msgid "web.menu.servers"
+msgstr "Серверы"
+
+msgid "web.menu.servers.game"
+msgstr "Игра"
+
+msgid "web.menu.servers.list"
+msgstr "Список серверов"
+
+msgid "web.menu.servers.of"
+msgstr "Список серверов: %(game)s"
+
+msgid "web.menu.servers.all"
+msgstr "Все игры"
+
+msgid "web.live.again"
+msgstr "Повторить"
+
+msgid "web.front.all_servers"
+msgstr "Все серверы"
+
+msgid "web.front.busiest"
+msgstr "Самый загруженный сервер, где есть место для отряда"
+
+msgid "web.front.busiest.free"
+msgstr "Самый загруженный сервер со свободным местом"
+
+msgid "web.servers.status"
+msgstr "Статус"
+
+msgid "web.servers.name"
+msgstr "Название сервера"
+
+msgid "web.servers.map"
+msgstr "Карта"
+
+msgid "web.servers.mode"
+msgstr "Режим игры"
+
+msgid "web.servers.players"
+msgstr "Игроки"
+
+msgid "web.servers.region"
+msgstr "Регион"
+
+msgid "web.servers.page"
+msgstr "Страница сервера"
+
+msgid "web.server.since"
+msgstr "Работает с %(time)s UTC"
+
+msgid "web.server.page"
+msgstr "Страница сервера"
+
+msgid "web.server.page.of"
+msgstr "Страница сервера: %(name)s"
+
+msgid "web.server.copy"
+msgstr "Скопировать название сервера"
+
+msgid "web.server.copied"
+msgstr "Название сервера скопировано."
+
+msgid "web.server.full"
+msgstr "Заполнен"
+
+msgid "web.server.empty"
+msgstr "Пуст"
+
+msgid "web.server.hardcore"
+msgstr "Хардкор"
+
+msgid "web.server.official"
+msgstr "Официальный"
+
+msgid "web.server.official.note"
+msgstr "Ведётся администраторами этого сервиса."
+
+msgid "web.server.unpublished"
+msgstr "Не опубликован"
+
+msgid "web.front.setup"
+msgstr "Настройка игры"
+
+msgid "web.front.setup.steps"
+msgstr "3 шага"
+
+msgid "web.front.setup.hook"
+msgstr "%(file)s берётся из последнего релиза OpenFESLHook."
+
+msgid "web.front.setup.download"
+msgstr "Скачать %(file)s"
+
+msgid "web.front.setup.folder"
+msgstr "Скопируйте %(file)s в папку игры рядом с %(executable)s."
+
+msgid "web.front.setup.account"
+msgstr "Запустите игру и создайте аккаунт. Когда игра запросит ключ, введите %(key)s."
+
+msgid "web.front.setup.account.plain"
+msgstr "Запустите игру и создайте аккаунт."
+
+msgid "web.front.setup.launcher"
+msgstr "Запустите игру; сначала откроется окно входа. Войдите с аккаунтом этого сервиса, зарегистрированным на этом сайте или созданным в другой игре, поскольку эта игра аккаунтов не создаёт."
+
+msgid "web.front.setup.copy"
+msgstr "Скопировать ключ"
+
+msgid "web.front.setup.copied"
+msgstr "Ключ скопирован."
+
+msgid "web.front.guide"
+msgstr "Полное руководство описывает каждый шаг подробно."
+
+msgid "web.front.play"
+msgstr "Как играть"
+
+msgid "web.servers.title"
+msgstr "Серверы"
+
+msgid "web.servers.all"
+msgstr "Все серверы"
+
+msgid "web.servers.stale.mark"
+msgstr "Не обновлено"
+
+msgid "web.servers.stale"
+msgstr "Не удалось обновить список серверов. Показаны значения на %(time)s UTC."
+
+msgid "web.servers.filters"
+msgstr "Параметры фильтра"
+
+msgid "web.servers.name.hint"
+msgstr "Часть названия сервера"
+
+msgid "web.servers.any"
+msgstr "Все"
+
+msgid "web.servers.modes.all"
+msgstr "Все режимы"
+
+msgid "web.servers.maps.all"
+msgstr "Все карты"
+
+msgid "web.servers.regions.all"
+msgstr "Все регионы"
+
+msgid "web.servers.show"
+msgstr "Показать только"
+
+msgid "web.servers.show.squad"
+msgstr "Есть место для отряда"
+
+msgid "web.servers.show.full"
+msgstr "Заполненные"
+
+msgid "web.servers.show.empty"
+msgstr "Пустые"
+
+msgid "web.servers.show.hardcore"
+msgstr "Хардкор"
+
+msgid "web.servers.reset"
+msgstr "Сбросить"
+
+msgid "web.servers.search"
+msgstr "Поиск"
+
+msgid "web.servers.joining"
+msgstr "К серверам подключаются из встроенного браузера серверов игры. Настройка игры занимает три шага."
+
+msgid "web.servers.sorted.players"
+msgstr "Серверы, отсортированные по числу игроков"
+
+msgid "web.servers.sorted.name"
+msgstr "Серверы, отсортированные по названию"
+
+msgid "web.servers.sorted.map"
+msgstr "Серверы, отсортированные по карте"
+
+msgid "web.servers.sorted.mode"
+msgstr "Серверы, отсортированные по режиму игры"
+
+msgid "web.servers.sorted.region"
+msgstr "Серверы, отсортированные по региону"
+
+msgid "web.servers.details"
+msgstr "Подробности: %(name)s"
+
+msgid "web.servers.roster"
+msgstr "Игроки на этом сервере"
+
+msgid "web.servers.more"
+msgstr "ещё %(count)s"
+
+msgid "web.servers.taken"
+msgstr "Все %(count)s мест заняты."
+
+msgid "web.servers.none_match"
+msgstr "Ни один сервер не подходит под эти фильтры."
+
+msgid "web.servers.none_match.total.one"
+msgstr "Всего онлайн %(count)s сервер. Если убрать фильтр, список станет шире."
+
+msgid "web.servers.none_match.total.few"
+msgstr "Всего онлайн %(count)s сервера. Если убрать фильтр, список станет шире."
+
+msgid "web.servers.none_match.total.many"
+msgstr "Всего онлайн %(count)s серверов. Если убрать фильтр, список станет шире."
+
+msgid "web.servers.none_match.total.other"
+msgstr "Всего онлайн %(count)s серверов. Если убрать фильтр, список станет шире."
+
+msgid "web.servers.used"
+msgstr "Применённые фильтры"
+
+msgid "web.servers.remove"
+msgstr "Убрать фильтр: %(filter)s"
+
+msgid "web.servers.reset_all"
+msgstr "Сбросить фильтры"
+
+msgid "web.servers.none.text"
+msgstr "Сервер появляется в этом списке, пока он ведёт игру. Выделенные серверы подключаются через OpenFESLHook."
+
+msgid "web.servers.found"
+msgstr "Найдено серверов: %(count)s"
+
+msgid "web.server.title"
+msgstr "Сервер"
+
+msgid "web.server.last_known"
+msgstr "последние известные"
+
+msgid "web.server.not_hosting"
+msgstr "Не ведёт игру"
+
+msgid "web.server.settings"
+msgstr "Настройки сервера"
+
+msgid "web.server.settings.last_known"
+msgstr "Последние известные настройки сервера"
+
+msgid "web.server.settings.last"
+msgstr "Последние известные настройки · опубликованы до %(time)s UTC"
+
+msgid "web.server.objective"
+msgstr "Цель"
+
+msgid "web.server.message"
+msgstr "Сообщение сервера"
+
+msgid "web.server.message.author"
+msgstr "Написано оператором сервера"
+
+msgid "web.server.not_hosting.since"
+msgstr "Не ведёт игру с %(time)s UTC"
+
+msgid "web.server.not_hosting.text"
+msgstr "Когда сервер снова начнёт вести игру, его покажет браузер серверов игры, а на этой странице появятся игроки и таблица результатов."
+
+msgid "web.server.status"
+msgstr "Статус"
+
+msgid "web.server.hosting"
+msgstr "Ведёт игру"
+
+msgid "web.server.up_since"
+msgstr "Работает с"
+
+msgid "web.server.time"
+msgstr "%(time)s UTC"
+
+msgid "web.server.content"
+msgstr "Содержимое"
+
+msgid "web.server.last_hosted"
+msgstr "Последняя игра"
+
+msgid "web.server.period"
+msgstr "%(start)s–%(end)s UTC"
+
+msgid "web.server.slots"
+msgstr "Места"
+
+msgid "web.server.select"
+msgstr "Выделите название и скопируйте его. Подключение происходит в игре; её браузер серверов находит этот сервер по названию."
+
+msgid "web.server.scoreboard"
+msgstr "Таблица результатов"
+
+msgid "web.server.highlighted"
+msgstr "Выделен %(name)s"
+
+msgid "web.server.scoreboard.not_hosting"
+msgstr "Таблицы результатов нет, пока сервер не ведёт игру."
+
+msgid "web.server.scoreboard.empty"
+msgstr "Игроков пока нет"
+
+msgid "web.server.scoreboard.empty.text"
+msgstr "Таблица заполняется по мере подключения игроков. Подключение происходит в игре; её браузер серверов находит этот сервер по названию."
+
+msgid "web.server.position"
+msgstr "Место"
+
+msgid "web.server.player"
+msgstr "Игрок"
+
+msgid "web.server.number.score"
+msgstr "Очки"
+
+msgid "web.server.number.kills"
+msgstr "Убийства"
+
+msgid "web.server.number.deaths"
+msgstr "Смерти"
+
+msgid "web.server.scoreboard.numbers"
+msgstr "Числа раунда в том виде, в каком их публикует сервер."
+
+msgid "web.server.menus"
+msgstr "Онлайн в %(game)s, но не на сервере."
+
+msgid "web.server.unknown"
+msgstr "Сервер не найден"
+
+msgid "web.server.unknown.heading"
+msgstr "По этому адресу нет известного сервера."
+
+msgid "web.server.unknown.text"
+msgstr "Сервер, переставший вести игру, некоторое время хранит свою страницу с последними известными настройками. Поиск по части названия находит серверы, в названии которых она есть."
+
+msgid "web.server.find"
+msgstr "Найти сервер"
+
+msgid "web.leaderboard.title"
+msgstr "Рейтинг"
+
+msgid "web.leaderboard.all_time"
+msgstr "За всё время"
+
+msgid "web.leaderboard.sort"
+msgstr "Сортировать по"
+
+msgid "web.leaderboard.stat.score"
+msgstr "Очки"
+
+msgid "web.leaderboard.stat.kills"
+msgstr "Убийства"
+
+msgid "web.leaderboard.stat.kd"
+msgstr "У/С"
+
+msgid "web.leaderboard.stat.dog_tags"
+msgstr "Жетоны"
+
+msgid "web.leaderboard.stat.time"
+msgstr "Время в игре"
+
+msgid "web.leaderboard.by.score"
+msgstr "очкам"
+
+msgid "web.leaderboard.by.kills"
+msgstr "убийствам"
+
+msgid "web.leaderboard.by.kd"
+msgstr "У/С"
+
+msgid "web.leaderboard.by.dog_tags"
+msgstr "жетонам"
+
+msgid "web.leaderboard.by.time"
+msgstr "времени в игре"
+
+msgid "web.leaderboard.column.score"
+msgstr "Очки"
+
+msgid "web.leaderboard.column.kills"
+msgstr "Убийства"
+
+msgid "web.leaderboard.column.deaths"
+msgstr "Смерти"
+
+msgid "web.leaderboard.column.kd"
+msgstr "У/С"
+
+msgid "web.leaderboard.column.dog_tags"
+msgstr "Жетоны"
+
+msgid "web.leaderboard.column.time"
+msgstr "Время"
+
+msgid "web.leaderboard.column.now"
+msgstr "Сейчас"
+
+msgid "web.leaderboard.rank"
+msgstr "Ранг"
+
+msgid "web.leaderboard.page"
+msgstr "Страница игрока"
+
+#, python-format
+msgid "web.leaderboard.page.of"
+msgstr "Страница игрока: %(name)s"
+
+#, python-format
+msgid "web.leaderboard.hours"
+msgstr "%(hours)s ч"
+
+msgid "web.leaderboard.offline_now"
+msgstr "Не в сети"
+
+msgid "web.leaderboard.find"
+msgstr "Найти игрока"
+
+msgid "web.leaderboard.name"
+msgstr "Имя игрока"
+
+msgid "web.leaderboard.name.hint"
+msgstr "Часть имени игрока"
+
+#, python-format
+msgid "web.leaderboard.found"
+msgstr "Место %(position)s по показателю «%(stat)s» · страница %(page)s"
+
+#, python-format
+msgid "web.leaderboard.missing"
+msgstr "%(name)s нет в этом рейтинге."
+
+msgid "web.leaderboard.missing.text"
+msgstr "Игрок появляется здесь после первого раунда со статистикой."
+
+#, python-format
+msgid "web.leaderboard.offline"
+msgstr "%(name)s сейчас не в сети."
+
+msgid "web.leaderboard.offline.text"
+msgstr "Список «Все» показывает место игрока."
+
+msgid "web.leaderboard.show"
+msgstr "Показать"
+
+msgid "web.leaderboard.show.everyone"
+msgstr "Все"
+
+msgid "web.leaderboard.show.online"
+msgstr "В сети"
+
+msgid "web.leaderboard.reset"
+msgstr "Сбросить"
+
+msgid "web.leaderboard.search"
+msgstr "Найти"
+
+msgid "web.leaderboard.about"
+msgstr "Места определяются выбранным показателем из игровой статистики каждого игрока. На щите указан номер ранга игрока, который зависит от общего числа очков. Поиск игрока открывает страницу с его местом."
+
+msgid "web.leaderboard.about.online"
+msgstr "Игроки в сети сохраняют свои общие места, поэтому в нумерации пропущены игроки, которые не в сети."
+
+#, python-format
+msgid "web.leaderboard.caption"
+msgstr "Рейтинг за всё время, сортировка по показателю «%(stat)s»"
+
+#, python-format
+msgid "web.leaderboard.caption.online"
+msgstr "Рейтинг за всё время, игроки в сети, сортировка по показателю «%(stat)s»"
+
+#, python-format
+msgid "web.leaderboard.listed"
+msgstr "Найдено игроков: %(count)s"
+
+#, python-format
+msgid "web.leaderboard.showing.online"
+msgstr "Игроки в сети с их общими местами · страница %(page)s из %(pages)s"
+
+msgid "web.leaderboard.empty"
+msgstr "Статистики пока нет"
+
+msgid "web.leaderboard.empty.text"
+msgstr "Ни у одного игрока пока нет статистики. Рейтинг заполнится, когда игра сохранит статистику первого раунда."
+
+msgid "web.leaderboard.setup"
+msgstr "Настройка игры занимает три шага."
+
+msgid "web.player.title"
+msgstr "Игрок"
+
+msgid "web.player.tabs"
+msgstr "Игрок"
+
+msgid "web.player.tab.stats"
+msgstr "Статистика"
+
+msgid "web.player.tab.awards"
+msgstr "Награды"
+
+msgid "web.player.tab.dog_tags"
+msgstr "Жетоны"
+
+msgid "web.player.rank.current"
+msgstr "Текущий ранг"
+
+msgid "web.player.rank.next"
+msgstr "Следующий ранг"
+
+#, python-format
+msgid "web.player.rank.toward"
+msgstr "Очки до ранга «%(rank)s»"
+
+#, python-format
+msgid "web.player.rank.of"
+msgstr "%(score)s из %(needed)s"
+
+#, python-format
+msgid "web.player.rank.to_go"
+msgstr "%(rank)s при %(needed)s очков: осталось %(left)s."
+
+msgid "web.player.rank.highest"
+msgstr "Высший ранг игры."
+
+msgid "web.player.now.match"
+msgstr "В матче"
+
+msgid "web.player.now.menus"
+msgstr "В сети, в меню игры, не на сервере."
+
+msgid "web.player.now.offline"
+msgstr "Сейчас не в сети. Пока игрок в сети, здесь отображается сервер или меню."
+
+#, python-format
+msgid "web.player.round"
+msgstr "В этом раунде: %(score)s очков, %(kills)s убийств и %(deaths)s смертей."
+
+msgid "web.player.combat_score"
+msgstr "Боевые очки"
+
+msgid "web.player.award_score"
+msgstr "Очки за награды"
+
+msgid "web.player.total_score"
+msgstr "Всего очков"
+
+msgid "web.player.record"
+msgstr "Боевой счёт"
+
+msgid "web.player.kd"
+msgstr "Соотношение У/С"
+
+#, python-format
+msgid "web.player.place"
+msgstr "%(place)s из %(everyone)s"
+
+msgid "web.player.unranked"
+msgstr "Пока без места"
+
+msgid "web.player.reported"
+msgstr "Статистика в том виде, в каком игра сообщает её в конце каждого раунда."
+
+msgid "web.player.pins"
+msgstr "Значки"
+
+#, python-format
+msgid "web.player.pins.all"
+msgstr "всего %(count)s"
+
+msgid "web.player.pins.none"
+msgstr "Значков пока не получено."
+
+msgid "web.player.times"
+msgstr "раз"
+
+msgid "web.player.insignias"
+msgstr "Знаки отличия"
+
+#, python-format
+msgid "web.player.insignias.earned"
+msgstr "Получено %(count)s из %(all)s"
+
+msgid "web.player.earned"
+msgstr "Получено"
+
+msgid "web.player.not_yet"
+msgstr "Ещё нет"
+
+msgid "web.player.awards.reported"
+msgstr "Награды в том виде, в каком игра сообщает их в конце каждого раунда."
+
+msgid "web.player.tag"
+msgstr "Жетон"
+
+#, python-format
+msgid "web.player.tags.caption"
+msgstr "Жетоны, которые забрал %(name)s, сначала новые"
+
+msgid "web.player.tags.from"
+msgstr "Забран у"
+
+msgid "web.player.tags.taken"
+msgstr "Последний раз забран"
+
+#, python-format
+msgid "web.player.tags.count"
+msgstr "Жетонов: %(count)s"
+
+msgid "web.player.tags.about"
+msgstr "Один жетон на игрока, как их хранит игра, с датой, когда был забран жетон этого игрока в последний раз."
+
+msgid "web.player.tags.none"
+msgstr "Жетонов пока не забрано."
+
+msgid "web.player.unknown"
+msgstr "Не найден"
+
+#, python-format
+msgid "web.player.unknown.text"
+msgstr "В OpenFESL нет игрока %(game)s по имени %(name)s."
+
+msgid "web.player.unknown.search"
+msgstr "Рейтинг также находит игроков по части имени."
+
+msgid "web.player.unknown.find"
+msgstr "Найти в рейтинге"
+
+#, python-format
+msgid "web.play.subtitle"
+msgstr "%(game)s на ПК"
+
+msgid "web.play.needed"
+msgstr "Обязательно"
+
+msgid "web.play.optional"
+msgstr "По желанию"
+
+msgid "web.play.original"
+msgstr "Нужна оригинальная копия игры; в OpenFESL нет игровых файлов."
+
+msgid "web.play.steps"
+msgstr "Настройте игру за несколько шагов"
+
+msgid "web.play.hook"
+msgstr "Получите хук"
+
+msgid "web.play.hook.where"
+msgstr "Из последнего релиза OpenFESLHook"
+
+#, python-format
+msgid "web.play.hook.text"
+msgstr "Скачайте %(file)s. Это OpenFESLHook — файл, который соединяет игру с OpenFESL."
+
+msgid "web.play.download"
+msgstr "Скачать"
+
+#, python-format
+msgid "web.play.download.file"
+msgstr "%(file)s · последний релиз"
+
+msgid "web.play.releases"
+msgstr "Все релизы"
+
+msgid "web.play.copy"
+msgstr "Скопируйте его к игре"
+
+msgid "web.play.copy.where"
+msgstr "В папку игры"
+
+#, python-format
+msgid "web.play.copy.text"
+msgstr "Скопируйте %(file)s в папку игры рядом с %(executable)s. Игра загружает его при запуске."
+
+msgid "web.play.folder"
+msgstr "Папка игры"
+
+msgid "web.play.folder.after"
+msgstr "Папка игры после этого шага"
+
+#, python-format
+msgid "web.play.remove"
+msgstr "Удаление %(file)s убирает хук."
+
+msgid "web.play.instructions"
+msgstr "Полная инструкция по установке"
+
+msgid "web.play.server"
+msgstr "Направьте хук на этот сервис"
+
+#, python-format
+msgid "web.play.server.where"
+msgstr "В %(file)s рядом с %(hook)s"
+
+#, python-format
+msgid "web.play.server.text"
+msgstr "OpenFESLHook подключается к встроенному серверу, если %(file)s не указывает другой. Сохраните %(file)s рядом с %(hook)s с этими строками. Если такой файл в папке уже есть, добавьте строку %(line)s в его раздел %(section)s."
+
+msgid "web.play.account"
+msgstr "Создайте аккаунт"
+
+msgid "web.play.account.where"
+msgstr "В игре"
+
+#, python-format
+msgid "web.play.account.text"
+msgstr "Запустите игру и создайте аккаунт на экране входа. При первом входе игра запросит ключ продукта: введите %(key)s."
+
+msgid "web.play.account.plain"
+msgstr "Запустите игру и создайте аккаунт на экране входа."
+
+msgid "web.play.launcher"
+msgstr "Войдите"
+
+msgid "web.play.launcher.where"
+msgstr "В окне входа"
+
+msgid "web.play.launcher.text"
+msgstr "Запустите игру: сначала OpenFESLHook откроет окно входа, затем запустит игру. Игра не создаёт аккаунтов, поэтому войдите с аккаунтом этого сервиса, зарегистрированным на этом сайте или созданным в другой игре."
+
+msgid "web.play.server_list"
+msgstr "Список серверов"
+
+#, python-format
+msgid "web.play.servers.one"
+msgstr "%(count)s сервер"
+
+#, python-format
+msgid "web.play.servers.few"
+msgstr "%(count)s сервера"
+
+#, python-format
+msgid "web.play.servers.many"
+msgstr "%(count)s серверов"
+
+#, python-format
+msgid "web.play.servers.other"
+msgstr "%(count)s серверов"
+
+msgid "web.play.keys"
+msgstr "Ключи продукта"
+
+#, python-format
+msgid "web.play.keys.count.one"
+msgstr "%(count)s ключ"
+
+#, python-format
+msgid "web.play.keys.count.few"
+msgstr "%(count)s ключа"
+
+#, python-format
+msgid "web.play.keys.count.many"
+msgstr "%(count)s ключей"
+
+#, python-format
+msgid "web.play.keys.count.other"
+msgstr "%(count)s ключей"
+
+msgid "web.play.keys.text"
+msgstr "Ключи вводятся в игре, когда она их запрашивает. Каждый добавляет аккаунту то, что открывает."
+
+msgid "web.play.key"
+msgstr "Ключ"
+
+msgid "web.play.unlocks"
+msgstr "Открывает"
+
+msgid "web.play.needed_or_optional"
+msgstr "Обязательно или по желанию"
+
+msgid "web.play.copy_column"
+msgstr "Копировать"
+
+msgid "web.play.copy_key"
+msgstr "Копировать"
+
+#, python-format
+msgid "web.play.copy_key.name"
+msgstr "Скопировать %(key)s"
+
+#, python-format
+msgid "web.play.copied_key"
+msgstr "%(key)s скопирован."
+
+msgid "web.host.title"
+msgstr "Свой сервер"
+
+#, python-format
+msgid "web.host.subtitle"
+msgstr "Выделенный сервер %(game)s"
+
+msgid "web.host.mode"
+msgstr "Размещение на этом сервисе"
+
+msgid "web.host.mode.approved"
+msgstr "Только одобренные серверы"
+
+msgid "web.host.mode.open"
+msgstr "Любой сервер"
+
+msgid "web.host.mode.approved.text"
+msgstr "Новый выделенный сервер ждёт одобрения администраторов этого сервиса. Пока он не одобрен, его нет в списке, игроки не могут к нему подключиться, а его раунды не идут в статистику."
+
+msgid "web.host.mode.open.text"
+msgstr "Здесь может вести игру любой выделенный сервер с OpenFESLHook. Он появляется в списке серверов, как только создаёт свою игру, и его раунды идут в статистику."
+
+msgid "web.host.administrators"
+msgstr "Администраторы"
+
+msgid "web.host.steps"
+msgstr "Настройте выделенный сервер за три шага"
+
+msgid "web.host.steps.open"
+msgstr "Настройте выделенный сервер за два шага"
+
+#, python-format
+msgid "web.host.next_to"
+msgstr "Рядом с %(file)s"
+
+msgid "web.host.hook"
+msgstr "Добавьте хук"
+
+#, python-format
+msgid "web.host.hook.text"
+msgstr "Скопируйте %(hook)s из последнего релиза OpenFESLHook в папку выделенного сервера рядом с %(executable)s."
+
+#, python-format
+msgid "web.host.hook.default"
+msgstr "Хук по умолчанию подключается к этому сервису OpenFESL, поэтому %(file)s не нужен."
+
+#, python-format
+msgid "web.host.hook.elsewhere"
+msgstr "Чтобы подключиться к этому сервису OpenFESL, сохраните рядом с ним %(file)s с этими строками."
+
+msgid "web.host.provider"
+msgstr "Добавьте файл провайдера"
+
+#, python-format
+msgid "web.host.provider.text"
+msgstr "Положите %(file)s, выданный администраторами этого сервиса, рядом с %(config)s вместо того, что поставляется с релизом сервера. Он сообщает OpenFESL, какой оператор ведёт сервер; храните его в тайне."
+
+msgid "web.host.provider.request"
+msgstr "Запросить файл"
+
+msgid "web.host.folder"
+msgstr "Папка сервера"
+
+msgid "web.host.folder.after"
+msgstr "Папка сервера после шагов 1 и 2"
+
+msgid "web.host.start"
+msgstr "Запустите сервер"
+
+msgid "web.host.start.waits"
+msgstr "Затем он ждёт одобрения"
+
+msgid "web.host.start.text"
+msgstr "Запустите сервер как обычно. Он подключается к OpenFESL, получает свой идентификатор и ждёт одобрения. Как только администратор его одобрит, он появится в списке серверов."
+
+msgid "web.host.state.waiting"
+msgstr "Ожидает"
+
+msgid "web.host.state.waiting.text"
+msgstr "Не в списке; без статистики"
+
+msgid "web.host.state.approved"
+msgstr "Одобрен"
+
+msgid "web.host.state.approved.text"
+msgstr "В списке; раунды идут в статистику"
+
+#, python-format
+msgid "web.host.identity"
+msgstr "Сервер хранит свой идентификатор в %(file)s в папке своего экземпляра. Без этого файла он считается новым сервером и снова ждёт одобрения."
+
+msgid "web.host.start.listed"
+msgstr "В списке после создания игры"
+
+msgid "web.host.start.open"
+msgstr "Запустите сервер как обычно. Он появляется в списке серверов, как только создаёт свою игру. Администраторы по-прежнему могут отозвать сервер: его игра пропадает из списка, соединение с OpenFESL закрывается, а следующие попытки отклоняются."
+
+msgid "web.host.seen"
+msgstr "Что видят администраторы"
+
+#, python-format
+msgid "web.host.seen.text"
+msgstr "Для каждого нового сервера: его название, его оператор по данным %(file)s (или «Неизвестный провайдер» с идентификатором файла), когда он впервые подключился, сколько раз пытался вести игру, а также карту и режим, которые он пытался вести."
+
+#, python-format
+msgid "web.host.seen.open.text"
+msgstr "Для каждого сервера: его название, его оператор по данным %(file)s (или «Неизвестный провайдер» с идентификатором файла, как для файла, который поставляется с каждым релизом сервера) и когда он впервые подключился."
+
+msgid "web.host.after"
+msgstr "После одобрения"
+
+msgid "web.host.after.text"
+msgstr "Сервер отображается на этом сайте и в браузере серверов игры. Администраторы могут отозвать одобрение: игра сервера пропадает из списка, соединение с OpenFESL закрывается, а следующие попытки отклоняются. Отзыв оператора отзывает все его серверы."
+
+msgid "web.servers.options"
+msgstr "Дополнительные параметры"
+
+msgid "web.servers.sort"
+msgstr "Сортировать по"
+
+msgid "web.servers.descending"
+msgstr "По убыванию"
+
+msgid "web.servers.ascending"
+msgstr "По возрастанию"
+
+#, python-format
+msgid "web.leaderboard.sorted"
+msgstr "По показателю «%(stat)s»"
+
+msgid "web.account.toast.linked"
+msgstr "%(service)s привязан как %(name)s. Вы вошли как %(account)s."
+
+msgid "web.account.toast.signed_in"
+msgstr "Вы вошли как %(account)s."
+
+msgid "web.account.toast.created"
+msgstr "Аккаунт создан."
+
+msgid "web.account.toast.named"
+msgstr "Отображаемое имя сохранено: %(name)s."
+
+msgid "web.account.menu.sign_in"
+msgstr "Войти"
+
+msgid "web.account.menu.named"
+msgstr ", меню аккаунта"
+
+msgid "web.account.menu.unnamed"
+msgstr "Аккаунт"
+
+msgid "web.account.menu.unnamed.hidden"
+msgstr " меню"
+
+msgid "web.account.menu.signed_in_as"
+msgstr "Вы вошли как"
+
+msgid "web.account.menu.signed_in"
+msgstr "Вход выполнен"
+
+msgid "web.account.menu.no_name"
+msgstr "Отображаемого имени пока нет"
+
+msgid "web.account.menu.through"
+msgstr "через %(service)s"
+
+msgid "web.account.menu.with_address"
+msgstr "с адресом электронной почты"
+
+msgid "web.account.menu.account"
+msgstr "Аккаунт"
+
+msgid "web.account.menu.display_name"
+msgstr "Отображаемое имя"
+
+msgid "web.account.menu.sign_out"
+msgstr "Выйти"
+
+msgid "web.account.address"
+msgstr "Адрес электронной почты"
+
+msgid "web.account.password"
+msgstr "Игровой пароль"
+
+msgid "web.account.password.show"
+msgstr "Показать игровой пароль"
+
+msgid "web.account.sign_in"
+msgstr "Вход"
+
+msgid "web.account.sign_in.subtitle"
+msgstr "Один аккаунт OpenFESL для всех игр"
+
+msgid "web.account.sign_in.email.only"
+msgstr "Вход с адресом электронной почты"
+
+msgid "web.account.sign_in.through"
+msgstr "Войти через"
+
+msgid "web.account.sign_in.email"
+msgstr "Или с адресом электронной почты"
+
+msgid "web.account.service.host"
+msgstr "Продолжение на %(host)s"
+
+msgid "web.account.service.busy"
+msgstr "Продолжаем на %(host)s"
+
+msgid "web.account.scope.identify"
+msgstr "идентификация"
+
+msgid "web.account.scope.email"
+msgstr "электронная почта"
+
+msgid "web.account.scope.read:user"
+msgstr "профиль"
+
+msgid "web.account.scope.user:email"
+msgstr "адреса электронной почты"
+
+msgid "web.account.scope.openid"
+msgstr "вход"
+
+msgid "web.account.scope.profile"
+msgstr "профиль"
+
+msgid "web.account.sign_in.password.note"
+msgstr "Пароль, который запрашивают такие игры, как %(games)s."
+
+msgid "web.account.sign_in.password.note.services"
+msgstr "Пароль, который игры вроде %(games)s запрашивают вместе с этим адресом, а не пароль какого-либо сервиса."
+
+msgid "web.account.sign_in.forgotten"
+msgstr "Забыли игровой пароль"
+
+msgid "web.account.sign_in.action"
+msgstr "Войти"
+
+msgid "web.account.sign_in.busy"
+msgstr "Входим"
+
+msgid "web.account.sign_in.side"
+msgstr "Аккаунты, созданные в игре, входят здесь с тем же адресом электронной почты и игровым паролем."
+
+msgid "web.account.sign_in.side.services"
+msgstr "Аккаунты, созданные в игре, входят здесь с тем же адресом электронной почты и игровым паролем и привязывают сервисы на странице аккаунта."
+
+msgid "web.account.sign_in.pauses"
+msgstr "После нескольких неудачных попыток для одного адреса вход с ним приостанавливается на несколько минут."
+
+msgid "web.account.sign_in.new"
+msgstr "Ещё нет аккаунта"
+
+msgid "web.account.sign_in.create"
+msgstr "Создать аккаунт"
+
+msgid "web.account.sign_in.create.text"
+msgstr "При регистрации запрашиваются адрес электронной почты, игровой пароль, дата рождения, страна и общедоступное отображаемое имя."
+
+msgid "web.account.sign_in.create.services"
+msgstr "Вход через сервис, который ещё не использует ни один аккаунт, ведёт к более короткому шагу, где игровой пароль необязателен."
+
+msgid "web.account.how"
+msgstr "Как работает аккаунт"
+
+msgid "web.account.how.account"
+msgstr "Один аккаунт"
+
+msgid "web.account.how.account.text"
+msgstr "Все игры на этом сайте используют один и тот же аккаунт OpenFESL."
+
+msgid "web.account.how.ways"
+msgstr "Способы входа"
+
+msgid "web.account.how.ways.text"
+msgstr "Адрес электронной почты с игровым паролем, с которыми входят и в такие игры, как %(games)s."
+
+msgid "web.account.how.ways.text.services"
+msgstr "Привязанные сервисы, а также адрес электронной почты с игровым паролем. Такие игры, как %(games)s, входят с адресом и игровым паролем."
+
+msgid "web.account.how.personas"
+msgstr "Персонажи"
+
+msgid "web.account.how.personas.text"
+msgstr "В каждой игре свои: %(personas)s."
+
+msgid "web.account.how.public"
+msgstr "Публично"
+
+msgid "web.account.how.public.text"
+msgstr "Профили, рейтинги и списки друзей показывают только отображаемое имя. Адрес электронной почты и способы входа остаются закрытыми."
+
+msgid "web.account.how.services"
+msgstr "Какие данные передаёт сервис"
+
+msgid "web.account.how.services.one"
+msgstr "%(service)s: %(scopes)s."
+
+msgid "web.account.how.services.end"
+msgstr "Больше ничего не запрашивается."
+
+msgid "web.account.how.check"
+msgstr "Проверка Cloudflare"
+
+msgid "web.account.how.check.text"
+msgstr "Формы входа по электронной почте, регистрации, сброса пароля и новой ссылки используют Cloudflare Turnstile, чтобы отличать людей от автоматических запросов."
+
+msgid "web.account.notice.not_signed_in"
+msgstr "Вход не выполнен"
+
+msgid "web.account.notice.wrong"
+msgstr "Адрес электронной почты и игровой пароль не соответствуют ни одному аккаунту."
+
+msgid "web.account.notice.wrong.text"
+msgstr "Адрес остался заполненным; поле игрового пароля снова пустое."
+
+msgid "web.account.notice.wrong.reset"
+msgstr "Забытый игровой пароль можно %(reset)s."
+
+msgid "web.account.notice.wrong.reset.link"
+msgstr "сбросить по электронной почте"
+
+msgid "web.account.notice.check"
+msgstr "Проверка не пройдена. Повторите попытку."
+
+msgid "web.account.notice.paused"
+msgstr "Приостановлено"
+
+msgid "web.account.notice.paused.title"
+msgstr "Вход с этим адресом приостановлен на несколько минут."
+
+msgid "web.account.notice.paused.text"
+msgstr "Несколько попыток с ним не совпали."
+
+msgid "web.account.notice.paused.services"
+msgstr "Вход через привязанный сервис не приостановлен."
+
+msgid "web.account.notice.paused.reset"
+msgstr "Новый игровой пароль, заданный по ссылке из письма, снимает приостановку."
+
+msgid "web.account.notice.unconfirmed"
+msgstr "Адрес не подтверждён"
+
+msgid "web.account.notice.unconfirmed.title"
+msgstr "Адрес электронной почты этого аккаунта ещё не подтверждён."
+
+msgid "web.account.notice.unconfirmed.text"
+msgstr "Ссылка, отправленная на %(address)s %(date)s, подтверждает его; после этого вход на сайте и в играх работает. Новая ссылка заменяет предыдущую."
+
+msgid "web.account.notice.unconfirmed.text.service"
+msgstr "Ссылка, отправленная на %(address)s %(date)s, подтверждает его и завершает создание аккаунта с %(service)s как способом входа. Новая ссылка заменяет предыдущую."
+
+msgid "web.account.notice.unconfirmed.send"
+msgstr "Отправить новую ссылку"
+
+msgid "web.account.notice.sending"
+msgstr "Отправляем"
+
+msgid "web.account.notice.not_sent"
+msgstr "Не отправлено"
+
+msgid "web.account.notice.link_sent"
+msgstr "Ссылка отправлена"
+
+msgid "web.account.notice.link_sent.title"
+msgstr "Новая ссылка отправлена на %(address)s."
+
+msgid "web.account.notice.link_sent.text"
+msgstr "Она действует до %(expires)s. Кнопка на открывшейся странице подтверждает адрес; после этого вход работает с тем же игровым паролем или сервисом."
+
+msgid "web.account.notice.link_wait"
+msgstr "Ссылка была отправлена в %(time)s."
+
+msgid "web.account.notice.link_wait.text"
+msgstr "Следующую можно отправить с %(time)s."
+
+msgid "web.account.notice.deactivated"
+msgstr "Деактивирован"
+
+msgid "web.account.notice.deactivated.title"
+msgstr "Этот аккаунт деактивирован."
+
+msgid "web.account.notice.deactivated.text"
+msgstr "Запрос на удаление деактивировал его %(date)s. Удаление завершит администратор; до тех пор аккаунт не может войти сюда или в игры."
+
+msgid "web.account.notice.signed_out"
+msgstr "Вы вышли"
+
+msgid "web.account.notice.signed_out.title"
+msgstr "Вы вышли из аккаунта."
+
+msgid "web.account.notice.signed_out.text"
+msgstr "Сессия на этом сайте завершена."
+
+msgid "web.account.notice.signed_out.services"
+msgstr "У сервиса своя сессия, поэтому при следующем входе через него пароль может не запрашиваться."
+
+msgid "web.account.notice.expired"
+msgstr "Сессия истекла"
+
+msgid "web.account.notice.expired.title"
+msgstr "Сессия истекла. Войдите снова."
+
+msgid "web.account.notice.next"
+msgstr "После входа снова откроется страница, которая была открыта."
+
+msgid "web.account.notice.form"
+msgstr "Форма устарела. Повторите попытку."
+
+msgid "web.account.notice.form.text"
+msgstr "Ничего не изменилось."
+
+msgid "web.account.notice.failed.title"
+msgstr "Вход через %(service)s не завершён."
+
+msgid "web.account.notice.failed.text"
+msgstr "%(service)s вернул ответ без выполненного входа. Аккаунт и способы входа остались прежними."
+
+msgid "web.account.notice.unreachable.title"
+msgstr "Не удалось связаться с %(service)s."
+
+msgid "web.account.notice.unreachable.text"
+msgstr "Остальные сервисы и адрес электронной почты с игровым паролем работают как обычно."
+
+msgid "web.account.notice.taken.title"
+msgstr "Аккаунт %(service)s тем временем привязали к другому аккаунту OpenFESL."
+
+msgid "web.account.notice.taken.text"
+msgstr "Аккаунт не создан. Вход через %(service)s открывает аккаунт, к которому он привязан."
+
+msgid "web.account.notice.no_registration"
+msgstr "Регистрация недоступна"
+
+msgid "web.account.notice.no_registration.title"
+msgstr "Для регистрации нужна почта сервера, которая не настроена."
+
+msgid "web.account.notice.no_registration.text"
+msgstr "Существующие аккаунты входят как обычно с адресом электронной почты и игровым паролем."
+
+msgid "web.account.notice.no_registration.text.services"
+msgstr "Существующие аккаунты входят как обычно через привязанный сервис или с адресом электронной почты и игровым паролем."
+
+msgid "web.account.proof"
+msgstr "Привязать %(service)s"
+
+msgid "web.account.proof.subtitle"
+msgstr "Нужно подтверждение аккаунта"
+
+msgid "web.account.proof.belongs"
+msgstr "%(address)s принадлежит аккаунту OpenFESL %(account)s."
+
+msgid "web.account.proof.belongs.text"
+msgstr "%(service)s отмечает этот адрес как подтверждённый для аккаунта %(service)s %(name)s. Для привязки к %(account)s нужно одно из подтверждений ниже; затем %(service)s будет привязан, а вход выполнен."
+
+msgid "web.account.proof.password"
+msgstr "С игровым паролем"
+
+msgid "web.account.proof.password.note"
+msgstr "Пароль, который %(account)s использует в %(games)s, а не пароль %(service)s."
+
+msgid "web.account.proof.busy"
+msgstr "Привязываем"
+
+msgid "web.account.proof.services"
+msgstr "Или через привязанный сервис"
+
+msgid "web.account.proof.services.first"
+msgstr "Через привязанный сервис"
+
+msgid "web.account.proof.through"
+msgstr "Войдите через %(linked)s, чтобы привязать %(service)s"
+
+msgid "web.account.proof.cancel"
+msgstr "Отмена"
+
+msgid "web.account.proof.cancel.text"
+msgstr "Забывает ответ %(service)s и возвращает ко входу; ничего не привязывается."
+
+msgid "web.account.proof.changes"
+msgstr "Что изменит привязка"
+
+msgid "web.account.proof.changes.way"
+msgstr "Ещё один способ входа"
+
+msgid "web.account.proof.changes.way.text"
+msgstr "С этого момента %(service)s входит в %(account)s наряду с %(ways)s."
+
+msgid "web.account.proof.ways.password"
+msgstr "его игровым паролем"
+
+msgid "web.account.proof.changes.rest"
+msgstr "Остальное не меняется"
+
+msgid "web.account.proof.changes.rest.text"
+msgstr "Отображаемое имя, страна и %(personas)s остаются прежними; второй аккаунт не создаётся."
+
+msgid "web.account.proof.changes.why"
+msgstr "Зачем нужно подтверждение"
+
+msgid "web.account.proof.changes.why.text"
+msgstr "Сервис присоединяется к аккаунту только через один из собственных способов входа аккаунта или его почтовый ящик."
+
+msgid "web.account.proof.changes.check.text"
+msgstr "Формы игрового пароля и электронной почты используют Cloudflare Turnstile, чтобы отличать людей от автоматических запросов."
+
+msgid "web.account.proof.not_linked"
+msgstr "Не привязано"
+
+msgid "web.account.proof.wrong"
+msgstr "Это не игровой пароль аккаунта %(account)s."
+
+msgid "web.account.proof.wrong.text"
+msgstr "%(service)s ещё не привязан. Остальные подтверждения тоже подходят."
+
+msgid "web.account.proof.check.text"
+msgstr "Поле игрового пароля снова пустое; %(service)s ещё не привязан."
+
+msgid "web.account.proof.paused"
+msgstr "Подтверждение игровым паролем приостановлено на несколько минут."
+
+msgid "web.account.proof.paused.text"
+msgstr "Несколько попыток для этого адреса не совпали. Остальные подтверждения не приостановлены."
+
+msgid "web.account.proof.another"
+msgstr "%(linked)s ответил аккаунтом, который не привязан к %(account)s."
+
+msgid "web.account.proof.another.text"
+msgstr "%(service)s ещё не привязан. Аккаунт %(linked)s, привязанный к %(account)s, подтверждает это, как и остальные подтверждения."
+
+msgid "web.account.proof.deactivated.text"
+msgstr "Запрос на удаление деактивировал его %(date)s. %(service)s не привязан; удаление завершит администратор."
+
+msgid "web.account.proof.check.mail"
+msgstr "Ссылка не отправлена; %(service)s ещё не привязан."
+
+msgid "web.account.proof.link_sent"
+msgstr "Ссылка отправлена на %(address)s."
+
+msgid "web.account.proof.link_sent.text"
+msgstr "Она действует до %(expires)s и срабатывает один раз. На открывшейся странице кнопка привязывает %(service)s к %(account)s и выполняет вход; новая ссылка заменяет предыдущую."
+
+msgid "web.account.proof.mail"
+msgstr "Или по электронной почте"
+
+msgid "web.account.proof.mail.first"
+msgstr "По электронной почте"
+
+msgid "web.account.proof.mail.text"
+msgstr "Ссылка, отправленная на %(address)s, открывает страницу, где кнопка привязывает %(service)s и выполняет вход. Она действует один час и срабатывает один раз."
+
+msgid "web.account.proof.mail.send"
+msgstr "Отправить ссылку на %(address)s"
+
+msgid "web.account.proof.link.expired"
+msgstr "Ссылка истекла"
+
+msgid "web.account.proof.link.expired.text"
+msgstr "Повторный вход через %(service)s предложит новую."
+
+msgid "web.account.proof.link.unknown"
+msgstr "Ссылка недействительна"
+
+msgid "web.account.proof.link.unknown.text"
+msgstr "Ссылка недействительна или уже использована."
+
+msgid "web.account.proof.link.open.text"
+msgstr "Привязка добавляет аккаунт %(service)s %(name)s как способ входа в аккаунт OpenFESL %(account)s и выполняет вход. Без неё ничего не изменится."
+
+msgid "web.account.display_name"
+msgstr "Отображаемое имя"
+
+msgid "web.account.display_name.rule"
+msgstr "От 4 до 16 символов: A-Z, a-z, 0-9, _ и -. Никакой другой аккаунт не может его использовать, регистр не учитывается. Его показывают профили, рейтинги и списки друзей."
+
+msgid "web.account.public"
+msgstr "Публично"
+
+msgid "web.account.optional"
+msgstr "Необязательно"
+
+msgid "web.account.country"
+msgstr "Страна"
+
+msgid "web.account.country.choose"
+msgstr "Выберите страну"
+
+msgid "web.account.birth"
+msgstr "Дата рождения"
+
+msgid "web.account.birth.day"
+msgstr "День"
+
+msgid "web.account.birth.month"
+msgstr "Месяц"
+
+msgid "web.account.birth.year"
+msgstr "Год"
+
+msgid "web.account.terms"
+msgstr "Примите условия OpenFESL"
+
+msgid "web.account.terms.short"
+msgstr "Условия"
+
+msgid "web.account.terms.note"
+msgstr "Один текст для всех игр на этом сайте, принимается один раз для аккаунта."
+
+msgid "web.account.terms.read"
+msgstr "Прочитать условия"
+
+msgid "web.account.terms.update"
+msgstr "Новые условия"
+
+msgid "web.account.terms.update.subtitle"
+msgstr "Новая версия"
+
+msgid "web.account.terms.update.title"
+msgstr "Вышла новая версия условий OpenFESL."
+
+msgid "web.account.terms.update.text"
+msgstr "Игры впускают аккаунт после принятия этой версии; игра без собственного экрана условий отклоняет входы, пока вы её не примете."
+
+msgid "web.account.terms.update.read"
+msgstr "Прочитать новую версию"
+
+msgid "web.account.terms.update.action"
+msgstr "Принять условия"
+
+msgid "web.account.terms.update.busy"
+msgstr "Принимаем"
+
+msgid "web.account.terms.update.changed"
+msgstr "Тем временем условия снова изменились; показана актуальная версия."
+
+msgid "web.account.terms.update.later"
+msgstr "Не сейчас"
+
+msgid "web.account.terms.update.later.text"
+msgstr "Страница аккаунта предлагает эту версию, пока она не принята."
+
+msgid "web.account.error.count.one"
+msgstr "Требует исправления %(count)s поле."
+
+msgid "web.account.error.count.few"
+msgstr "Требуют исправления %(count)s поля."
+
+msgid "web.account.error.count.many"
+msgstr "Требуют исправления %(count)s полей."
+
+msgid "web.account.error.count.other"
+msgstr "Требуют исправления %(count)s полей."
+
+msgid "web.account.error.email.long"
+msgstr "Адрес электронной почты содержит не более 63 символов; в этом их %(detail)s."
+
+msgid "web.account.error.email.form"
+msgstr "Адрес электронной почты имеет вид name@example.net; этот так не выглядит."
+
+msgid "web.account.error.email.taken"
+msgstr "Другой аккаунт уже использует этот адрес электронной почты."
+
+msgid "web.account.error.password.short"
+msgstr "Игровой пароль содержит от 8 до 31 символа; отправленный содержал %(detail)s."
+
+msgid "web.account.error.password.long"
+msgstr "Игры хранят не более 31 байта игрового пароля, а такие буквы, как ą, занимают два; отправленный содержал %(detail)s."
+
+msgid "web.account.error.display_name.characters"
+msgstr "Отображаемое имя может содержать только A-Z, a-z, 0-9, _ и -; в этом есть %(characters)s."
+
+msgid "web.account.error.display_name.length"
+msgstr "Отображаемое имя содержит от 4 до 16 символов; в этом их %(detail)s."
+
+msgid "web.account.error.display_name.taken"
+msgstr "Другой аккаунт уже использует %(detail)s, регистр не учитывается."
+
+msgid "web.account.error.space"
+msgstr "пробел"
+
+msgid "web.account.error.country.missing"
+msgstr "Для регистрации нужно выбрать страну из списка."
+
+msgid "web.account.error.birth.form"
+msgstr "Дата рождения состоит из дня, месяца и года из четырёх цифр, записанных числами."
+
+msgid "web.account.error.birth.day"
+msgstr "%(day)s %(month)s не существует."
+
+msgid "web.account.error.birth.future"
+msgstr "Указанная дата рождения находится в будущем."
+
+msgid "web.account.error.terms.missing"
+msgstr "Для регистрации нужно принять условия."
+
+msgid "web.account.register"
+msgstr "Создать аккаунт"
+
+msgid "web.account.register.service"
+msgstr "Создать аккаунт"
+
+msgid "web.account.register.service.subtitle"
+msgstr "Вход через %(service)s"
+
+msgid "web.account.register.not_registered"
+msgstr "Не зарегистрирован"
+
+msgid "web.account.register.kept"
+msgstr "Форма сохраняет значения; поле игрового пароля снова пустое."
+
+msgid "web.account.register.paused"
+msgstr "Регистрация с этим адресом приостановлена на несколько минут."
+
+msgid "web.account.register.paused.text"
+msgstr "Недавно с ним уже приходили запросы. Отправленные на него ссылки остаются действительными; форма сохраняет значения."
+
+msgid "web.account.register.service.new"
+msgstr "Аккаунт %(service)s %(name)s пока не привязан ни к одному аккаунту OpenFESL."
+
+msgid "web.account.register.service.text"
+msgstr "Этот шаг создаёт аккаунт OpenFESL с %(service)s как способом входа. Аккаунт, созданный в игре, входит со своим адресом и игровым паролем и привязывает %(service)s на странице аккаунта."
+
+msgid "web.account.register.signs_in"
+msgstr "Адрес электронной почты и игровой пароль"
+
+msgid "web.account.register.names"
+msgstr "Адрес электронной почты и отображаемое имя"
+
+msgid "web.account.register.email.verified"
+msgstr "Заполнено из адреса, который %(service)s отмечает как подтверждённый, можно изменить. Общедоступные страницы его не показывают."
+
+msgid "web.account.register.email"
+msgstr "Логин в играх, которые его запрашивают, например %(games)s. Общедоступные страницы его не показывают."
+
+msgid "web.account.register.email.link"
+msgstr "Отправленная на него ссылка подтверждает его."
+
+msgid "web.account.register.password"
+msgstr "От 8 до 31 символа. Игры вроде %(games)s запрашивают его вместе с адресом электронной почты; это не пароль какого-либо сервиса."
+
+msgid "web.account.register.public"
+msgstr "Отображаемое имя, страна и возраст"
+
+msgid "web.account.register.name.suggested"
+msgstr "Предложено по имени в %(service)s; оно подходит под правила и свободно."
+
+msgid "web.account.register.age.bar"
+msgstr "Страна и возраст"
+
+msgid "web.account.register.country.reported"
+msgstr "Страна предложена по данным Cloudflare об этом соединении, её можно изменить."
+
+msgid "web.account.register.age"
+msgstr "Дата рождения сверяется с возрастным ограничением выбранной страны и не сохраняется. Игры получают страну вместе с данными аккаунта."
+
+msgid "web.account.register.password.optional"
+msgstr "Игры, которые входят с адресом и паролем, например %(games)s, требуют его; позже его можно задать на странице аккаунта. От 8 до 31 символа, это не пароль какого-либо сервиса."
+
+msgid "web.account.register.action"
+msgstr "Создать аккаунт"
+
+msgid "web.account.register.busy"
+msgstr "Создаём"
+
