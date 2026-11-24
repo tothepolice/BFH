@@ -2,7 +2,7 @@ from collections.abc import Callable, Mapping
 from typing import Any
 
 from fastapi import APIRouter, Request
-from fastapi.responses import HTMLResponse, Response
+from fastapi.responses import HTMLResponse, JSONResponse, Response
 
 from openfesl.core.accounts import Account
 from openfesl.core.games import Games
@@ -100,6 +100,45 @@ class RegisterPages:
         @router.post("/register")
         async def register(request: Request) -> Response:
             return await self._register(request, None, "")
+
+        @router.post("/api/register")
+        async def api_register(request: Request) -> JSONResponse:
+            """Register an account for a launcher: JSON in, JSON out, no cookies or forms.
+
+            Sites that use Turnstile keep registration on their pages, where it can be solved.
+            """
+            if self._turnstile:
+                return JSONResponse({"error": "check"}, status_code=400)
+            registration = self._registration()
+            if not await registration.offered():
+                return JSONResponse({"error": "unavailable"}, status_code=503)
+            body = await request.json()
+            birth = body.get("birth") or {}
+            language = str(body.get("language") or "en")
+            entry = Registration(
+                str(body.get("email", "")).strip(),
+                str(body.get("password", "")),
+                str(body.get("displayName", "")).strip(),
+                str(body.get("country", "")).strip(),
+                (str(birth.get("day", "")), str(birth.get("month", "")), str(birth.get("year", ""))),
+                body.get("terms") is True,
+            )
+            match await registration.register(entry, None, language, None):
+                case list() as problems:
+                    return JSONResponse(
+                        {"error": "invalid", "fields": field_errors(problems, language)},
+                        status_code=400,
+                    )
+                case TooYoung():
+                    return JSONResponse({"error": "too-young"}, status_code=403)
+                case Wait():
+                    return JSONResponse({"error": "wait"}, status_code=429)
+                case IdentityTaken():
+                    return JSONResponse({"error": "taken"}, status_code=409)
+                case Mailed(address):
+                    return JSONResponse({"ok": True, "confirm": "mail", "address": address})
+                case _:
+                    return JSONResponse({"ok": True})
 
         @router.get(SERVICE, response_class=HTMLResponse)
         async def service_page(request: Request) -> Response:
